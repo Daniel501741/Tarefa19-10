@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        let Imovel=function(){
+            this.area=" ";
+            this.tipo= " ";
+            this.endereco="";
+            }
+        let imoveis=new Array()
+        do{
+            imovel=new Imovel()
+            imovel.area=prompt("Informe a area do imovel (em metros quadrados)","")
+            imovel.tipo=prompt("Informe o tipo do seu imovel","")
+            imovel.endereco=prompt("Informe o endereço do seu imovel (numero: ... , Bairro - Cidade - Estado","")
+            imoveis.push(imovel) //inserir na ultima posicao do array
+        } while (confirm("Deseja continuar?"));
+
+        console.log(imovel.tipo[0].toUpperCase() + imovel.tipo.slice(1).toLowerCase() + " com " + imovel.area + " metros quadrados, localizada na rua " + imovel.endereco); 
+
+        
+
+    </script>
+</body>
+</html>
+
